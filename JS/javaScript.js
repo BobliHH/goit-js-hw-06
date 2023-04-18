@@ -6,3 +6,5 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
+// return ingredients; 
+console.log(ingredients);
