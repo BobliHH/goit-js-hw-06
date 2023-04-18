@@ -1,16 +1,27 @@
 // #Exercițiul 1
 
-const list = document.getElementById(`categories`);
-console.log(list);
+const categories = document.getElementById(`categories`);
 
-const ingredients = [
-  "Potatoes",
-  "Mushrooms",
-  "Garlic",
-  "Tomatos",
-  "Herbs",
-  "Condiments",
-];
+const categoriesNumber = categories.childElementCount;
+console.log(`Number of categories:${categoriesNumber}`);
 
-console.log(ingredients);
+const itemElements = document.querySelectorAll(".item");
+itemElements.forEach((item) => {
+  console.log("Category: ", item.firstElementChild.textContent);
+  console.log("Elements: ", item.lastElementChild.children.length);
+});
+
+
+
+
+// const ingredients = [
+//   "Potatoes",
+//   "Mushrooms",
+//   "Garlic",
+//   "Tomatos",
+//   "Herbs",
+//   "Condiments",
+// ];
+
+// console.log(ingredients);
 
