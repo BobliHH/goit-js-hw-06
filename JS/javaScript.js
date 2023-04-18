@@ -1,3 +1,8 @@
+// #Exercițiul 1
+
+const list = document.getElementById(`categories`);
+console.log(list);
+
 const ingredients = [
   "Potatoes",
   "Mushrooms",
@@ -6,5 +11,6 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-// return ingredients; 
+
 console.log(ingredients);
+
