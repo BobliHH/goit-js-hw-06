@@ -22,3 +22,60 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery > li {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 5px;
+
+}
+
+img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;  
+  border-radius: 20px;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: rotate(360deg) ;
+  filter: grayscale(90%);
+  transition :all 1000ms;
+}
