@@ -9,7 +9,7 @@ function submitEvent(event){
     const email = event.target.email;
     const password = event.target.password;
 
-    if (email.value == '' && password.value == '') {
+    if (email.value == '' || password.value == '') {
         alert('Please fill in all fields');
     }
     else {
@@ -17,6 +17,7 @@ function submitEvent(event){
         userProfile.password = password.value;
 
         console.log(userProfile);
+        event.preventDefault();
     }
 }
 
